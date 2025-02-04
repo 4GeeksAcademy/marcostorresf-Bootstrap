@@ -1,23 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Feed</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand">Instagram</a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Feed</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="title">
+        <i class="fa-brands fa-instagram"></i>
+        <a class="navbar-brand">
+          <bold>Instagram</bold>
+        </a>
+      </div>
+      <div class="d-flex">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <a href="grid.html"><i class="fa-solid fa-table-cells"></i></a>
+    <a href="index.html"><i class="fa-solid fa-square"></i></a>
+  </div>
+
+  <!-- Bootstrap grid method -->
+  <div class="container text-center">
+    <div class="row" >
+      <div class="col">
+        <img src="https://preview.redd.it/what-is-this-style-of-tuning-called-v0-ftio5282i9ib1.jpg?auto=webp&s=919372bce8954e70abac2174d50b11ca4036768c">
+      </div>
+      <div class="col">
+        <img src="https://www.motortrend.com/uploads/sites/25/2011/04/Top-20-JDM-Cars-Of-All-Time-1996-180SX-Type-X-Front-Bumper.jpg">
+      </div>
+      <div class="col">
+        <img src="https://www.motortrend.com/uploads/2022/07/1998-honda-civic-type-r-m-hyper-widebodykit-side.jpg">
+      </div>
+    </div>
+
+    <div class="row" >
+      <div class="col">
+        <img src="https://tork.buzz/__export/1730400750374/sites/tork/img/2024/10/31/car-tuning-in-jdm-style-japan-7.png_37538530.png">
+      </div>
+      <div class="col">
+        <img src="https://promptstock.photos/wp-content/uploads/2023/10/Car-Tuning-in-German-Style-4.png">
+      </div>
+      <div class="col">
+        <img src="https://stanceauto.co.uk/uploads/images/202307/image_870x_64b27cb0d8964.webp">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <img src="https://www.tuningblog.eu/wp-content/uploads/2020/10/Lada-2108-JDM-Style-Tuning-Restomod-Header.jpg">
+      </div>
+      <div class="col">
+        <img src="https://promptstock.photos/wp-content/uploads/2023/10/Car-Tuning-in-JDM-Style-Japan-9.png">
+      </div>
+      <div class="col">
+        <img src="https://live.staticflickr.com/5026/5781241314_ed3032fc26_b.jpg">
+      </div>
+    </div>
+
+
+    <!-- grid with flexbox using bootstrap classname -->
+    <div class="d-flex flex-wrap">
+      <div class="d-flex justify-content-around w-100">
+        <h3>column</h3>
+        <h3>Column</h3>
+        <h3>Column</h3>
+      </div>
+      <div class="d-flex justify-content-around w-100">
+        <h3>Column</h3>
+        <h3>Column</h3>
+        <h3>Column</h3>
+      </div>
+      <div class="d-flex justify-content-around w-100">
+        <h3>Column</h3>
+        <h3>Column</h3>
+        <h3>Column</h3>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
 </body>
+
 </html>
