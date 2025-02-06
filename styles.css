@@ -13,3 +13,6 @@ img {
     display: flex;
     column-gap: 10px;
 }
+.dropdown {
+    padding-left: 10px;
+}
